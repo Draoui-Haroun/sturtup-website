@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    font-family: 'Lobster', sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+.menu{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.menu a{
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu a.active {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 25px;
+}
+.menu a:hover {
+    border: 2px solid #fff;
+    font-size: 25px;
+}
+.welcome{
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph p{
+    font-size: 14px;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .sous-services{
+    border: 3px solid #fff;
+    width: 20%;
+    margin: 3%;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.services .sous-services h3{
+    font-size: 23px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: underline;
+}
+.services .sous-services a h3:hover{
+    color: #d3d3d3;
+}
+.services .sous-services p{
+    color: #fff;
+}
+.social-media{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 14px;
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    background: linear-gradient(to left ,gray, black);
+    border-radius: 15px;
+}
+.social-media a:hover {
+    font-size: 25px;
+    height: 29px;
+    width: 27px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
